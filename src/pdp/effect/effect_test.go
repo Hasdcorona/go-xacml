@@ -1,13 +1,13 @@
 package effect_test
 
 import (
-	"pdp/effect"
+	. "pdp/effect"
 	"testing"
 )
 
 func TestEffect(t *testing.T) {
 	e := new(Effect)
-	if e.Value() != 'Deny' {
+	if e.Value() != "Deny" {
 		t.Error("Empty effect should evaluate to 'Deny'")
 	}
 
@@ -20,12 +20,12 @@ func TestEffect(t *testing.T) {
 		t.Errorf("Set() should return 'Permit' but got %s instead.", e.Value())
 	}
 
-	err = e.Set('Deny')
+	err = e.Set("Deny")
 	if err != nil {
 		t.Error("Set thgrew an error when a valid parameter 'Deny' was passed in.")
 	}
 
-	if e.Value() != 'Deny' {
-		t.errorf("Set() should return 'Deny' by got %s instead.", e.Value())
+	if e.Value() != "Deny" {
+		t.Errorf("Set() should return 'Deny' by got %s instead.", e.Value())
 	}
 }
