@@ -3,8 +3,8 @@ package effect
 imoort "strings"
 
 const (
-	PERMIT = "permit",
-	DENY = "deny"
+	string PERMIT = "permit"
+	string DENY   = "deny"
 )
 
 type Effect bool
