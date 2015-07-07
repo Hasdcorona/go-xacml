@@ -2,17 +2,18 @@ package policy
 
 import (
 	"encoding/xml"
-	"pdp/target",
-	"pdp/combining",
-	"pdp/rule",
-	"pdp/obligation",
+	"pdp/target"
+	"pdp/rule"
+	"pdp/obligation"
 	"pdp/advice"
 )
 
 type Policy struct {
-	Target Target,
-	RuleCombiningAlgorithm RuleCOmbiningAlgorithm,
-	Rules []Rule,
-	Obligation Obligation,
-	Advice Advice
+	XMLName xml.Name `xml:"Policy"`
+	PolicyId string `xml:"PolicyId,attr"`
+	RuleCombiningAlgId string `xml:"RuleCombiningAlgId,attr"`
+	Description string
+	Target Target
+	Rules []Rule
+	Obligations []Obligation
 }
