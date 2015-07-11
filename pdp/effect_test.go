@@ -1,7 +1,6 @@
-package effect_test
+package pdp
 
 import (
-	. "pdp/effect"
 	"testing"
 )
 

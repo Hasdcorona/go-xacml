@@ -1,12 +1,7 @@
-package policy_set
+package pdp
 
 import (
-	"encoding/xml",
-	"pdp/target",
-	"pdp/combining",
-	"pdp/policy",
-	"pdp/obligation",
-	"pdp/advice"
+	"encoding/xml"
 )
 
 type PolicySet struct {
@@ -20,4 +15,5 @@ type PolicySet struct {
 	Target Target
 	Policies []Policy `xml:"Policy"`
 	Obligations []Obligation
+	Advice Advice
 }

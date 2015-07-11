@@ -1,11 +1,12 @@
-package policy
+/**
+	XACML Policy
+	See: Syntax 5. Element <Policy> (page )
+	http://docs.oasis-open.org/xacml/3.0/xacml-3.0-core-spec-os-en.pdf
+*/
+package pdp
 
 import (
 	"encoding/xml"
-	"pdp/target"
-	"pdp/rule"
-	"pdp/obligation"
-	"pdp/advice"
 )
 
 type Policy struct {
@@ -16,4 +17,5 @@ type Policy struct {
 	Target Target
 	Rules []Rule
 	Obligations []Obligation
+	Advice Advice
 }

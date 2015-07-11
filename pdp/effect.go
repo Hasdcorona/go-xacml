@@ -1,10 +1,12 @@
-package effect
+package pdp
 
-imoort "strings"
+import (
+	"strings"
+)
 
 const (
-	string PERMIT = "permit"
-	string DENY   = "deny"
+	PERMIT string = "permit"
+	DENY string  = "deny"
 )
 
 type Effect bool

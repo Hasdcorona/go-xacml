@@ -1,12 +1,12 @@
-package rule
+/**
+	XACML Rule
+	See: Syntax 5. Element <Rule> (page )
+	http://docs.oasis-open.org/xacml/3.0/xacml-3.0-core-spec-os-en.pdf
+*/
+package pdp
 
 import (
 	"encoding/xml"
-	"pdp/target"
-	"pdp/effect"
-	"pdp/condition"
-	"pdp/obligation"
-	"pdp/advice"
 )
 
 type Rule struct {
