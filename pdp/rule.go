@@ -12,7 +12,7 @@ import (
 type Rule struct {
 	XMLName xml.Name `xml:"Rule"`
 	RuleId string `xml:"RuleId,attr"`
-	Effect Effect `xml:"Effect,attr"`
+	Effect string `xml:"Effect,attr"`
 	Description string
 	Target Target
 }
