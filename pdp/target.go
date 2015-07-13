@@ -6,5 +6,7 @@ import (
 
 type Target struct {
 	XMLName xml.Name `xml:"Target"`
-	Targets []AnyOf `xml:"AnyOf"`
+	Subjects Subjects `xml:"Subjects"`
+	Resources Resources `xml:"Resources"`
+	Actions Actions `xml:"Actions"`
 }

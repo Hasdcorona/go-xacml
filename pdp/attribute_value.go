@@ -6,4 +6,5 @@ import (
 
 type AttributeValue struct {
 	XMLName xml.Name `xml:"AttributeValue"`
+	DataType string `xml:"DataType,attr"`
 }

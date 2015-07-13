@@ -11,9 +11,19 @@ type PolicySet struct {
 	SchemaLocation string `xml:"schemaLocation,attr"`
 	PolicySetId string `xml:"PolicySetId,attr"`
 	PolicyCombiningAlgId string `xml:"PolicyCombiningAlgId,attr"`
+	Version string `xml:"Version,attr"`
+	MaxDelegationDepth uint16 `xml:"MaxDelegationDepth"`
 	Description string
-	Target Target
+	PolicyIssuer PolicyIssuer `xml:"PolicyIssuer"`
+	PolicySetDefaults PolicySetDefaults `xml:"PolicySetDefaults"`
+	Target Target `xml:"Target"`
 	Policies []Policy `xml:"Policy"`
-	Obligations []Obligation
-	Advice Advice
+	PolicySets []PolicySet `xml:"PolicySet"`
+	PolicySetIdReference PolicySetIdReference
+	PolicyIdReference PolicyIdReference
+	Obligations []Obligation `xml:"Obligations>Obligation"`
+	//Advice []Advice `xml:"Advice"`
+	CombinerParameters []CombinerParameter `xml:"CombinerParameters"`
+	PolicyCombinerParameters []CombinerParameter `xml:"PolicyCombinerParameters"`
+	PolicySetCombinerParameters []CombinerParameter `xml:"PolicySetCombinerParameters"`
 }
