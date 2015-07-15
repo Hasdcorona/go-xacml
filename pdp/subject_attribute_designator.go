@@ -5,7 +5,7 @@ import (
 )
 
 type SubjectAttributeDesignator struct {
-	XMLName xml.Name `xml:"SubjectAttributeDesignator"`
-	AttributeId string `xml:"AttributeId,attr"`
-	DataType string `xml:"DataType,attr"`
+	XMLName     xml.Name `xml:"SubjectAttributeDesignator"`
+	AttributeId string   `xml:"AttributeId,attr"`
+	DataType    string   `xml:"DataType,attr"`
 }

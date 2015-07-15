@@ -5,6 +5,7 @@ import (
 )
 
 type AttributeValue struct {
-	XMLName xml.Name `xml:"AttributeValue"`
-	DataType string `xml:"DataType,attr"`
+	XMLName  xml.Name `xml:"AttributeValue"`
+	DataType string   `xml:"DataType,attr"`
+	Value    string   `xml:",chardata"`
 }

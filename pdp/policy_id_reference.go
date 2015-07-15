@@ -5,6 +5,6 @@ import (
 )
 
 type PolicyIdReference struct {
-	XMLName xml.Name `xml:"PolicyIdReference"`
-	PolicyId string `xml:"PolicyIdReference"`
+	XMLName  xml.Name `xml:"PolicyIdReference"`
+	PolicyId string   `xml:"PolicyIdReference"`
 }

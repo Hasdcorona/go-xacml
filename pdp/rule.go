@@ -1,7 +1,7 @@
 /**
-	XACML Rule
-	See: Syntax 5. Element <Rule> (page )
-	http://docs.oasis-open.org/xacml/3.0/xacml-3.0-core-spec-os-en.pdf
+XACML Rule
+See: Syntax 5. Element <Rule> (page )
+http://docs.oasis-open.org/xacml/3.0/xacml-3.0-core-spec-os-en.pdf
 */
 package pdp
 
@@ -10,9 +10,10 @@ import (
 )
 
 type Rule struct {
-	XMLName xml.Name `xml:"Rule"`
-	RuleId string `xml:"RuleId,attr"`
-	Effect string `xml:"Effect,attr"`
+	XMLName     xml.Name `xml:"Rule"`
+	RuleId      string   `xml:"RuleId,attr"`
+	Effect      string   `xml:"Effect,attr"`
 	Description string
-	Target Target
+	Target      Target
+	Condition   Condition `xml:"Condition"`
 }

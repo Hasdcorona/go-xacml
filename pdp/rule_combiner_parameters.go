@@ -5,7 +5,7 @@ import (
 )
 
 type RuleCombinerParameters struct {
-	XMLName xml.Name `xml:"RuleCombinerParameters"`
-	RuleIdRef string `xml:"RuleIdRef,attr"`
+	XMLName            xml.Name            `xml:"RuleCombinerParameters"`
+	RuleIdRef          string              `xml:"RuleIdRef,attr"`
 	CombinerParameters []CombinerParameter `xml:"CombinerParameter"`
 }

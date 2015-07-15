@@ -5,6 +5,6 @@ import (
 )
 
 type PolicyDefaults struct {
-	XMLName xml.Name `xml:"PolicyDefaults"`
-	XPathVersion string `xml:"XPathVersion"`
+	XMLName      xml.Name `xml:"PolicyDefaults"`
+	XPathVersion string   `xml:"XPathVersion"`
 }

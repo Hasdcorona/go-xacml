@@ -5,12 +5,12 @@ import (
 )
 
 type Actions struct {
-	XMLName xml.Name `xml:"Actions"`
+	XMLName   xml.Name `xml:"Actions"`
 	AnyAction AnyAction
-	Actions []Action `xml:"Action"`
+	Actions   []Action `xml:"Action"`
 }
 
 type Action struct {
-	XMLName xml.Name `xml:"Action"`
+	XMLName     xml.Name    `xml:"Action"`
 	ActionMatch ActionMatch `xml:"ActionMatch"`
 }

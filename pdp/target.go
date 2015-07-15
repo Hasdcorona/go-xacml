@@ -5,8 +5,8 @@ import (
 )
 
 type Target struct {
-	XMLName xml.Name `xml:"Target"`
-	Subjects Subjects `xml:"Subjects"`
+	XMLName   xml.Name  `xml:"Target"`
+	Subjects  Subjects  `xml:"Subjects"`
 	Resources Resources `xml:"Resources"`
-	Actions Actions `xml:"Actions"`
+	Actions   Actions   `xml:"Actions"`
 }

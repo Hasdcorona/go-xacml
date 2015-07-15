@@ -5,7 +5,7 @@ import (
 )
 
 type PolicyIssuer struct {
-	XMLName xml.Name `xml:"PolicyIssuer"`
-	Content string `xml:"Content,innerxml"`
+	XMLName    xml.Name    `xml:"PolicyIssuer"`
+	Content    string      `xml:"Content,innerxml"`
 	Attributes []Attribute `xml:"Attribute"`
 }

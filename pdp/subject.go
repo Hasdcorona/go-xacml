@@ -5,12 +5,12 @@ import (
 )
 
 type Subjects struct {
-	XMLName xml.Name `xml:"Subjects"`
+	XMLName    xml.Name `xml:"Subjects"`
 	AnySubject AnySubject
-	Subjects []Subject `xml:"Subject"`
+	Subjects   []Subject `xml:"Subject"`
 }
 
 type Subject struct {
-	XMLName xml.Name `xml:"Subject"`
+	XMLName      xml.Name     `xml:"Subject"`
 	SubjectMatch SubjectMatch `xml:"SubjectMatch"`
 }
